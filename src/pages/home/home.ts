@@ -14,11 +14,20 @@ export class HomePage {
 
 
   pushPage(): void {
-    this.navCtrl.push(ContactPage);
+    this.navCtrl.push(ContactPage, {
+      type: 'push',
+      course: 'ionic2',
+      year: 2017,
+      message: () => {
+        console.log('Welcome to Ionic Course 2');
+      }
+    });
   }
 
   setRoot(): void {
-    this.navCtrl.setRoot(ContactPage);
+    this.navCtrl.setRoot(ContactPage, {
+      type: 'setRoot'
+    });
   }
 
 }

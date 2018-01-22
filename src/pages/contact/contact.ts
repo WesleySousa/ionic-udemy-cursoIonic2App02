@@ -12,7 +12,12 @@ export class ContactPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactPage');
+    console.log(this.navParams);
+    console.log(this.navParams.get('type')); // ou this.navParams.data.type
+    this.navParams.data.message();
+
+    console.log(this.navParams.data['year']);
+    
   }
 
   pushPage(): void {

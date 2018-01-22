@@ -1,4 +1,3 @@
-import { ContactPage } from './../pages/contact/contact';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -7,12 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ContactPage } from './../pages/contact/contact';
+import { LifecycleEventsPage } from './../pages/lifecycle-events/lifecycle-events';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ContactPage
+    ContactPage,
+    LifecycleEventsPage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    ContactPage
+    ContactPage,
+    LifecycleEventsPage
   ],
   providers: [
     StatusBar,
